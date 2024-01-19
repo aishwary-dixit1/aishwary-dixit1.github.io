@@ -1,0 +1,264 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.left-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 200px;
+}
+.logo-name{
+    background-color: white;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    width: 200px;
+}
+.name{
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 10vw;
+}
+button{
+    border: 1px hidden;
+    width:75px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    margin: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.greeting {
+                
+    text-align : center;
+    height : 685px;
+    width : 1455px;
+    background-image: url("C:\Users\Aishwary Dixit\OneDrive\Desktop\Projects\IMG_1458.JPG");
+} 
+.greeting-text {
+    display: inline-block;
+    color : black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size : 200px;
+    opacity : 0.75;
+    transition: opacity 0.5s;
+    transition: font-size 0.5s;
+    cursor: grab;
+}
+.greeting-text:hover {
+    font-size : 210px;
+    opacity : 1;
+}
+.intro {
+    background-color : black;
+    height : 500px;
+    width : 1455px;
+}
+.intro-text{
+    display: inline-block;
+    color : white;
+    float: left;
+    text-align: center;
+    padding: 1px;
+    margin:75px;
+    margin-right:50px;
+    width:800px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size : 50px;
+    opacity: 0.75;
+    transition: opacity 0.5s;
+    transition: font-size 0.5s; 
+    
+}
+.intro-text:hover{
+    font-size:51px;
+    opacity: 1;
+}
+.image-layout{
+    display: inline-block;
+    margin: 30px;
+    margin-right: 70px;
+    float: right;
+    height : 450px;
+    width : 400px;
+    border-radius: 200px;
+}
+.projects {
+    background-color : white;
+    padding: 40px 60px 40px 60px ;
+}
+.projects-content {
+    border: 5px solid black;
+    color : black;
+    border-radius: 20px;
+    width: 1300px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 100px 300px;
+    align-items: center;
+}
+.pro-head{
+    color: black;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.pro-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+
+}
+.Pro-link{
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 10px 25px 10px 25px;
+    height: 250px;
+}
+.knowledge {
+    background-color : black;
+}
+.knowledge-content {
+    color : white;
+    display: grid;
+    grid-template-rows: 100px 300px;
+    align-items: center;
+}
+.skill-head{
+    color: white;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.skill{
+    
+}
+.connection {
+    background-color: white;
+    padding: 20px ;
+    text-align: center;
+}
+.connection-content {
+    color :black;
+    text-align: center;
+    font-size: 75px;
+    padding: 1px;
+    margin-bottom: 20px;
+}
+.linkedin {
+    display: inline-block;
+    margin: 50px;
+    height: 120px;
+    width: 120px;
+}
+.Linkedin-logo {
+    height: 100px;
+    border-radius: 15px;
+    width: 98px;
+    transition: height 0.5s, width 0.5s;
+
+}
+.Linkedin-logo:hover{
+    height: 115px;
+    width: 113px;
+}
+.github {
+    display: inline-block;
+    margin: 50px;
+    height: 120px;
+    width: 120px;
+}
+.github-logo {
+    height: 100px;
+    border-radius: 15px;
+    width: 98px;
+    transition: height 0.5s, width 0.5s;
+}
+.github-logo:hover{
+    height: 115px;
+    width: 113px;
+}
+.leetcode {
+    display: inline-block;
+    margin: 50px;
+    height: 120px;
+    width: 120px;
+}
+.leetcode-logo {
+    height: 100px;
+    border-radius: 15px;
+    width: 98px;
+    transition: height 0.5s, width 0.5s;
+}
+.leetcode-logo:hover{
+    height: 115px;
+    width: 113px;
+}
+.twitter {
+    display: inline-block;
+    margin: 50px;
+    height: 120px;
+    width: 120px;
+
+}
+.twitter-logo {
+    height: 100px;
+    border-radius: 15px;
+    width: 98px;
+    transition: height 0.5s, width 0.5s;
+}
+.twitter-logo:hover{
+    height: 115px;
+    width: 113px;
+}
+.instagram {
+    display: inline-block;
+    margin: 50px;
+    height: 120px;
+    width: 120px;
+}
+.instagram-logo {
+    height: 100px;
+    border-radius: 15px;
+    width: 98px;
+    transition: height 0.5s, width 0.5s;
+}
+.instagram-logo:hover{
+    height: 115px;
+    width: 113px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:45px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+}
