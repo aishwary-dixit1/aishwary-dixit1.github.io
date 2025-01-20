@@ -1,7 +1,8 @@
 const heading = "Software Developer";
 
 const headingPara = document.querySelector("#heading-para");
-const projectTechStacks = document.querySelector(".project-techstacks");
+const animatedElements = document.querySelectorAll(".animate");
+
 
 function pause(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -32,13 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
   animateElements.forEach(element => observer.observe(element));
 });
 
-const tech = "Kotlin, Jetpack Compose, MongoDB"
-const techstacksArray = tech.split(", ");
-techstacksArray.forEach( (skill) => {
-    let skillDiv = document.createElement("div");
-    skillDiv.classList.add("techstacks");
-    skillDiv.textContent = skill; 
-    projectTechStacks.appendChild(skillDiv);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    } else {
+      entry.target.classList.remove("visible");
+    }
+  });
+}, {
+  threshold: 0.1,
 });
 
+animatedElements.forEach((el) => observer.observe(el));
 

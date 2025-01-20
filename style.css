@@ -5,22 +5,7 @@
 }
 
 body {
-  /* background-color: black; */
   background: linear-gradient(to bottom, #301082 0%, #000000 15%, #000000 100%);
-  /* background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% ); */
-  /* background: 
-        radial-gradient(
-            circle at top, 
-            #6931ec, 
-            transparent 10%
-        ),
-        linear-gradient(
-            to bottom,
-            #6a37e1 1%, 
-            #000000 15%, 
-            #000000 90%,
-            #00d8ff 99.5%
-        ); */
 }
 
 header {
@@ -74,7 +59,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 #home {
@@ -124,84 +109,45 @@ nav a:hover {
   padding-left: 5%;
 }
 
+.social-button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 .social-button:hover {
   box-shadow: 0 0 15px 5px #6123ff;
 }
 
-#social-handle-icon-1 {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  background-image: url("images/instagramlogo.png");
-  background-size: cover;
-  background-position: center;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-#social-handle-icon-2 {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
+.social-button:nth-of-type(1) {
   background-image: url("images/githublogo.png");
-  background-size: cover;
-  background-position: center;
   background-size: 130%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  border: none;
-  cursor: pointer;
 }
-
-#social-handle-icon-3 {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
+.social-button:nth-of-type(2) {
   background-image: url("images/leetcodelogo.png");
-  background-size: cover;
-  background-position: center;
   background-size: 225%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  border: none;
-  cursor: pointer;
 }
-
-#social-handle-icon-4 {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  background-image: url("images/twitterlogo.png");
-  background-size: cover;
-  background-position: center;
-  background-size: 130%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  border: none;
-  cursor: pointer;
+.social-button:nth-of-type(3) {
+  background-image: url("images/codechef-logo.png");
+  background-size: 165%;
+}
+.social-button:nth-of-type(4) {
+  background-image: url("images/codeforces-logo.png");
+  background-size:90%;
 }
 
 #about-me {
     width:90vw;
     height: auto;
-    margin: 2rem 2rem;
+    margin: 3rem 2rem;
   display:flex;
   flex-direction: row;
   justify-content: space-around;
@@ -216,14 +162,43 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .about-me-img img{
-  height: 50vh;
-  width: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 15px 10px #6123ff;
 }
 
-
+.about-me-img:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, black);
+  pointer-events: none;
+}
+.about-me-img img:hover {
+  box-shadow: 0 0 15px 10px #6123ff;
+}
+.about-me-img:hover .text-overlay{
+  opacity: 1;
+}
+.text-overlay {
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  transform: translateY(-100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
 
 .about-me-heading {
     margin: 0rem 1rem;
@@ -245,7 +220,7 @@ nav a:hover {
 #projects {
   width: 90vw;
   height: auto;
-  margin: 0.5rem 1rem;
+  margin: 3rem 1rem;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -262,19 +237,23 @@ nav a:hover {
 
 .section-heading h2 {
   margin: 0 0.5rem;
-  font-size: 2rem;
-  color: #007bff;
+  font-size: 3rem;
+  color: #6123ff;
 }
 
-.section-heading:before,
-.section-heading:after {
+.section-heading:first-of-type:after {
   content: "";
-  flex: 1;
+  flex: 0.8;
   height: 0.2rem;
-  background-color: #7d7d7d;
+  background: linear-gradient(to left, black, #6123ff);
 }
 
-
+.section-heading:last-of-type:after {
+  content: "";
+  flex: 0.8;
+  height: 0.2rem;
+  background: linear-gradient(to right, black, #6123ff);
+}
 
 .heading-card {
     height: 40vh;
@@ -300,10 +279,14 @@ nav a:hover {
   padding: 1rem;
   box-shadow: 0 0 1px linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: start;
   flex-direction: column;
   gap: 1rem;
+}
+
+.highlighted-text {
+  color: #6123ff;
 }
 
 .project-card:hover {
@@ -381,19 +364,117 @@ nav a:hover {
 }
 
 #skills {
-  height: 100vh;
   width: 90vw;
-  background-color: #7d7d7d;
-  border: 0px none;
-  border-radius: 2rem;
+  height: auto;
   margin: 0.5rem 1.5rem;
 }
 
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+.skill-tags {
+  display: inline-block;
+  border: 3px solid #6123ff;
+  font-size: 2rem;
+  color: #6123ff;
+  padding: 1rem;
+}
+
+.skill-tags:hover {
+  background-color: #6123ff;
+  color: white;
+}
+
 #connect {
-  height: 100vh;
-  width: 90vw;
-  background-color: #7d7d7d;
-  border: 0px none;
-  border-radius: 2rem;
-  margin: 0.5rem 1.5rem;
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right,black 0%, #6123ff 50%, black 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.connect-heading p:first-child{
+  color: Black;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.connect-heading p:last-child{
+  color: Black;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.connect-heading p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.connect-heading p img {
+  height: 4vh;
+  width: auto;
+}
+
+.connect-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.connect-content > *  {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 15px 5px black;
+}
+.connect-content > *:hover  {
+  box-shadow: 0 0 15px 5px lightslategray;
+}
+
+.connect-content .social-button:nth-of-type(1) {
+  background-image: url("images/instagramlogo.png");
+  background-size: 150%;
+}
+.connect-content .social-button:nth-of-type(2) {
+  background-image: url("images/twitterlogo.png");
+  background-size: 130%;
+}
+.connect-content .social-button:nth-of-type(3) {
+  background-image: url("images/linkedinlogo.png");
+  background-size: 130%;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(25%);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
