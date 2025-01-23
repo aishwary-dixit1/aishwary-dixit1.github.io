@@ -481,7 +481,7 @@ nav a:hover {
 
 .animate {
   opacity: 0;
-  transform: translateY(25%);
+  transform: translateY(15%);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -542,6 +542,14 @@ nav a:hover {
   #home {
     width: 100vw;
     gap: 2rem;
+    transform: translateY(-10%);
+  }
+
+  #heading-para {
+    font-size: 2rem;
+  }
+  #main-heading {
+    font-size: 4rem;
   }
 
   .social-connection {
@@ -549,20 +557,20 @@ nav a:hover {
   }
   
   .social-button {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 3.2rem;
+    width: 3.2rem;
   }
   
   #about-me {
     margin: 3rem 0.5rem;
     flex-direction: column-reverse;
-    gap: 0.5rem;
+    gap: 0rem;
   }
   
   .about-me-img {
     width: 80vw;
     height: 60vh;
-    padding: 1rem;
+    padding: 1rem 1rem 0rem 1rem; /* new change  */
   }
   
   .about-me-img img{
