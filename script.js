@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
               observer.unobserve(entry.target); 
           }
       });
-  }, { threshold: 0.2 }); 
+  }, { threshold: 0.1 }); 
 
   animateElements.forEach(element => observer.observe(element));
 });
