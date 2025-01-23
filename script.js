@@ -4,6 +4,14 @@ const headingPara = document.querySelector("#heading-para");
 const animatedElements = document.querySelectorAll(".animate");
 
 
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
+
 function pause(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
