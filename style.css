@@ -11,13 +11,11 @@ body {
 
 header {
   margin: 1rem 0.5rem;
-  z-index: 5;
-  position: relative;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   animation: sliding-in-from-top 1s ease-out;
 }
@@ -495,6 +493,9 @@ nav a:hover {
 
 
 @media only screen and (max-width: 480px) {
+  .header {
+    justify-content: start;
+  }
 
   .hamburger {
     display: block;
