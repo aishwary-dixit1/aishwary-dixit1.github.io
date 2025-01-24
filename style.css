@@ -727,3 +727,101 @@ nav a:hover {
   }
   
 }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .header {
+    justify-content: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  #home {
+    align-items: start;
+    text-align: center;
+  }
+
+  #heading-para {
+    width: 80vw;
+    text-align: start;
+    font-size: 2.2rem;
+    padding-left: 10%;
+  }
+
+  #main-heading {
+    width: 80vw;
+    text-align: start;
+    font-size: 4rem;
+    padding-left: 10%;
+  }
+
+  .social-connection {
+    justify-content: start;
+    padding-left: 10%;
+  }
+
+  #about-me {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .about-me-img {
+    width: 50vw;
+    height: auto;
+  }
+
+  .about-me-heading {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+
+  .about-me-description {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  #projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heading-card {
+    width: 50vw;
+    height: auto;
+  }
+
+  .project-card {
+    width: 50vw;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .skill-container {
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .skill-tags {
+    font-size: 1.8rem;
+    padding: 0.8rem;
+  }
+
+  #connect {
+    height: 40vh;
+  }
+
+  .connect-heading p:first-child {
+    font-size: 2.5rem;
+  }
+
+  .connect-heading p:last-child {
+    font-size: 1.5rem;
+  }
+}
