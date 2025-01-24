@@ -340,7 +340,8 @@ nav a:hover {
     gap: 0.5rem;
 }
 
-.project-link button {
+
+.project-link a {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
@@ -536,7 +537,7 @@ nav a:hover {
 
   .main {
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
   }
   
   #home {
