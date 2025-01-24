@@ -250,21 +250,21 @@ nav a:hover {
 .section-heading h2 {
   margin: 0 0.5rem;
   font-size: 3rem;
-  color: #6123ff;
+  color: #743ffa;
 }
 
 .section-heading:first-of-type:after {
   content: "";
   flex: 0.8;
   height: 0.2rem;
-  background: linear-gradient(to left, black, #6123ff);
+  background: linear-gradient(to left, black, #743ffa);
 }
 
 .section-heading:last-of-type:after {
   content: "";
   flex: 0.8;
   height: 0.2rem;
-  background: linear-gradient(to right, black, #6123ff);
+  background: linear-gradient(to right, black, #743ffa);
 }
 
 .heading-card {
@@ -298,7 +298,7 @@ nav a:hover {
 }
 
 .highlighted-text {
-  color: #6123ff;
+  color: #743ffa;
 }
 
 .project-card:hover {
@@ -393,12 +393,12 @@ nav a:hover {
   display: inline-block;
   border: 3px solid #6123ff;
   font-size: 2rem;
-  color: #6123ff;
+  color: #743ffa;
   padding: 1rem;
 }
 
 .skill-tags:hover {
-  background-color: #6123ff;
+  background-color: #743ffa;
   color: white;
 }
 
